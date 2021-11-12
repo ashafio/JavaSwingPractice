@@ -2,6 +2,7 @@ package shafiswingjava;
 import javax.swing.JOptionPane;
 import javax.swing.JFrame;
 import javax.swing.ImageIcon;
+import java.awt.*;
 
 public class IconImg extends JFrame{
 
@@ -35,7 +36,10 @@ public class IconImg extends JFrame{
         {
             try{
                 JOptionPane.showMessageDialog(null,"It will take a while. Please wait.");
-                Thread.sleep(5000);
+                Thread.sleep(2000); //To wait sometime
+                //It'll give a sound
+                Toolkit.getDefaultToolkit().beep();
+
                 JOptionPane.showMessageDialog(null,"Success.You are Up to Date");
             }catch (InterruptedException e)
             {
@@ -54,6 +58,3 @@ public class IconImg extends JFrame{
 
     }
 }
-
-
-
